@@ -27,7 +27,7 @@ function pageSplitBind(callbackFuc, maxPage = 20) {
                 firstArray = [...Array(maxLen)].map(_ => ++jj),
                 lastArray = [...Array(maxLen)].map(_ => maxNo - --ii);
             if (clickedSpanNo === "‹") {
-                if (activeNoInt < minus) {
+                if (activeNoInt <= minus) {
                     return;
                 }
             }
